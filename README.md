@@ -48,8 +48,11 @@ Aucunes
 Le vaisseau n'est plus modélisé comme un point dans l'espace de jeu mais comme une entité avec une dimension.
 - Story 2: Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu 
 Le vaisseau est possède maintenant des dimensions. Cela nous oblige a vérifier en fonction de sa taille qu'il ne déborde pas de l'espace de jeu.
-- Story 3: 
-- Story 4: 
+- Story 3: Déplacer un vaisseau vers la droite en tenant compte de sa dimension
+Le vaisseau possède maintenant une dimension. On vérifie d'abord qu'il se déplace vers la droite dans l'espace en prenant en compte sa dimension.
+- Story 4: Déplacer un vaisseau vers la gauche en tenant compte de sa dimension
+Le vaisseau possède maintenant une dimension. On vérifie d'abord qu'il se déplace vers la gauche dans l'espace en prenant en compte sa dimension.
+
 
 ### Fonctionnalités en cours d'implémentation :
 
