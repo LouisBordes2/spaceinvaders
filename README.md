@@ -39,7 +39,7 @@ Beaucoup d'erreur dans mon code que je n'arrive à résoudre notamment dans les 
 Aucunes
 
 
-## Semaine 1 : du 26 Avril au 3 Mai
+## Semaine 2 : du 11 Avril au 18 Mai
 ### Sprints et fonctionnalités réalisées
 
 ####Déplacer le vaisseau dans le jeu
@@ -60,11 +60,11 @@ Aucune
 
 ### Diagramme de classes 
 
-![M2104](https://user-images.githubusercontent.com/80245495/116818599-86b8ae80-ab6c-11eb-97d4-e1dc0331b984.PNG)
+![Diagramme de classe S2](https://user-images.githubusercontent.com/80245495/118477883-8218fc00-b70f-11eb-98ea-ebd5a769fb05.PNG)
 
 ### Nuage de mots du projet spaceinvaders
 
-
+![Nuage de mots S2](https://user-images.githubusercontent.com/80245495/118478752-88f43e80-b710-11eb-8405-984da7e9c9dc.PNG)
 
 ### Difficultés rencontrées 
 
