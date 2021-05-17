@@ -42,7 +42,7 @@ Aucunes
 ## Semaine 2 : du 11 Avril au 18 Mai
 ### Sprints et fonctionnalités réalisées
 
-#### Déplacer le vaisseau dans le jeu
+#### Dimensionner le vaisseau
 
 - Story 1: Positionner un nouveau vaisseau avec une dimension donnée
 Le vaisseau n'est plus modélisé comme un point dans l'espace de jeu mais comme une entité avec une dimension.
