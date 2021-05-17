@@ -2,7 +2,7 @@
 ## Semaine 1 : du 26 Avril au 3 Mai
 ### Sprints et fonctionnalités réalisées
 
-####Déplacer le vaisseau dans le jeu
+#### Déplacer le vaisseau dans le jeu
 
 - Story 1: Créer l'espace de jeu
 Nous avons créer un espace de jeu en deux dimensions.
@@ -42,7 +42,7 @@ Aucunes
 ## Semaine 2 : du 11 Avril au 18 Mai
 ### Sprints et fonctionnalités réalisées
 
-####Déplacer le vaisseau dans le jeu
+#### Déplacer le vaisseau dans le jeu
 
 - Story 1: Positionner un nouveau vaisseau avec une dimension donnée
 Le vaisseau n'est plus modélisé comme un point dans l'espace de jeu mais comme une entité avec une dimension.
