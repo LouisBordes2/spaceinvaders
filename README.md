@@ -39,6 +39,40 @@ Beaucoup d'erreur dans mon code que je n'arrive à résoudre notamment dans les 
 Aucunes
 
 
+## Semaine 1 : du 26 Avril au 3 Mai
+### Sprints et fonctionnalités réalisées
+
+####Déplacer le vaisseau dans le jeu
+
+- Story 1: Positionner un nouveau vaisseau avec une dimension donnée
+Le vaisseau n'est plus modélisé comme un point dans l'espace de jeu mais comme une entité avec une dimension.
+- Story 2: Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu 
+Le vaisseau est possède maintenant des dimensions. Cela nous oblige a vérifier en fonction de sa taille qu'il ne déborde pas de l'espace de jeu.
+- Story 3: 
+- Story 4: 
+
+### Fonctionnalités en cours d'implémentation :
+
+Aucune 
+
+### Diagramme de classes 
+
+![M2104](https://user-images.githubusercontent.com/80245495/116818599-86b8ae80-ab6c-11eb-97d4-e1dc0331b984.PNG)
+
+### Nuage de mots du projet spaceinvaders
+
+
+
+### Difficultés rencontrées 
+
+Des erreurs dans mes tests que je n'arrive pas à résoudre.
+
+
+### Remarques diverses : 
+
+Aucunes
+
+
 ## Glossaire
 
 - Vaisseau : Véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire les envahisseurs.

@@ -5,6 +5,7 @@ package fr.unilim.iut.spaceinvaders;
     import org.junit.Test;
     import org.junit.Before;
 
+import utils.DebordementEspaceJeuException;
 import utils.HorsEspaceJeuException;
 
     public class SpaceInvadersTest {
@@ -184,6 +185,24 @@ import utils.HorsEspaceJeuException;
 			} catch (final DebordementEspaceJeuException e) {
 			}
 				
+		}
+	   
+	   @Test
+	    public void test_VaisseauAvecDimensionAvance_DeplacerVaisseauVersLaDroite() {
+			
+			spaceinvaders.positionnerUnNouveauVaisseau(3,2,7,9);
+			spaceinvaders.deplacerVaisseauVersLaDroite();
+			assertEquals("" + 
+			"...............\n" + 
+			"...............\n" +
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"........VVV....\n" + 
+			"........VVV....\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
 		}
 	   
 
