@@ -1,5 +1,35 @@
 # spaceinvaders
 
+## Semaine 4 : du 25 Avril au 1 Juin
+### Sprints et fonctionnalités réalisées
+
+#### Tirer un missile depuis le vaisseau
+
+- Story 1: 
+- Story 2: 
+- Story 3: 
+
+### Fonctionnalités en cours d'implémentation :
+
+Aucune 
+
+### Diagramme de classes
+
+
+### Nuage de mots du projet spaceinvaders
+
+
+### Difficultés rencontrées 
+
+Beaucoup d'erreur dans mon code que je n'arrive à résoudre notamment dans les tests.
+
+
+### Remarques diverses : 
+
+Aucunes
+
+
+
 ## Semaine 3 : du 18 Avril au 25 Mai
 ### Sprints et fonctionnalités réalisées
 
@@ -19,11 +49,13 @@ On vérifie maintenant qu'il n'y ait pas d'erreur ou de problème avec la vitess
 
 Aucune 
 
-### Diagramme de classes 
+### Diagramme de classes
+
+![Diagramme S3](https://user-images.githubusercontent.com/80245495/118626087-d8974080-b7ca-11eb-8daf-4b181fbdcfa4.PNG)
 
 ### Nuage de mots du projet spaceinvaders
 
-
+![Nuage de mots S3](https://user-images.githubusercontent.com/80245495/118625033-f021f980-b7c9-11eb-92c0-ddee9c32274c.PNG)
 
 ### Difficultés rencontrées 
 
@@ -122,4 +154,6 @@ Aucunes
 
 - Missile : Projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire
 
-- Vitesse instantanée : Vecteur obtenu en dérivant les coordonnées cartésiennes de la position par rapport au temps
+- Vitesse instantanée : Vecteur obtenu en dérivant les coordonnées cartésiennes de la position par rapport au temps.
+
+- Sprite :  Elément graphique qui peut se déplacer sur l'écran (...) Le fond de l'écran constitue généralement le décor et les sprites sont les personnages et les objets qui se superposent au fond d'écran et qui se déplacent.

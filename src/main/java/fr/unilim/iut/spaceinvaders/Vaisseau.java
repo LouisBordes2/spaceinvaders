@@ -1,25 +1,14 @@
 import utils.Dimension;
 import utils.Position;
 
-public class Vaisseau {
+public class Vaisseau extends Sprite {
 
-	private Position origine;
-    private Dimension dimension;
-    private int vitesse;
-
-    public Vaisseau(Dimension dimension, Position positionOrigine) {
-		this(dimension, positionOrigine, 1);
-	}
-
-   public Vaisseau(int longueur, int hauteur, int x, int y) {
-	   this(new Dimension(longueur, hauteur), new Position(x, y), 1);
+	
+	public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
+	    super(dimension, positionOrigine, vitesse);
     }
-
-    public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
-	    this.dimension = dimension;
-	    this.origine = positionOrigine;
-	    this.vitesse = vitesse;
-    }
+	
+	
 
     public boolean occupeLaPosition(int x, int y) {
 	    return estAbscisseCouverte(x) && estOrdonneeCouverte(y);
