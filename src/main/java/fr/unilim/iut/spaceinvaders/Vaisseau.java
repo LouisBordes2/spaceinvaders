@@ -1,13 +1,15 @@
 import utils.Dimension;
+import utils.HorsEspaceJeuException;
+import utils.MissileException;
 import utils.Position;
 
 public class Vaisseau extends Sprite {
 
 	
+
 	public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
 	    super(dimension, positionOrigine, vitesse);
     }
-	
 	
 
     public boolean occupeLaPosition(int x, int y) {
@@ -50,6 +52,23 @@ public class Vaisseau extends Sprite {
 	   this.origine.changerAbscisse(x);
 	   this.origine.changerOrdonnee(y);
    }
-	  
+   
+   public Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+		
+	   throw new MissileException("La longueur du missile est supérieure à celle du vaisseau");
+		Position positionOrigineMissile = calculerLaPositionDuTirMissile(dimensionMissile);
+		return new Missile(dimensionMissile, positionOrigineMissile, vitesseMissile);
+	}
+
+
+public Position calculerLaPositionDuTirMissile(Dimension dimensionMissile) {
+	int abscisseMilieuVaisseau = this.abscisseLaPlusAGauche() + (this.longueur / 2);
+	int abscisseOrigineMissile = abscisseMilieuVaisseau - (dimensionMissile.longueur() / 2);
+
+	int ordonneeeOrigineMissile = this.ordonneeLaPlusBasse() - 1;
+	Position positionOrigineMissile = new Position(abscisseOrigineMissile, ordonneeeOrigineMissile);
+	return positionOrigineMissile;
+}
+  
 
 }

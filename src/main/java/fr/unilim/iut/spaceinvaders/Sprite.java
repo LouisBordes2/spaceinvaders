@@ -5,9 +5,9 @@ import utils.Position;
 
 public abstract class Sprite {
 
-	private Dimension dimension;
-	private Position origine;
-	private int vitesse;
+	protected Dimension dimension;
+	protected Position origine;
+	protected int vitesse;
 
 	public Sprite(Dimension dimension, Position origine, int vitesse) {
 		super();

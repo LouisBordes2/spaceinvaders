@@ -1,17 +1,20 @@
 package fr.unilim.iut.spaceinvaders;
 
+import utils.Constante;
 import utils.DebordementEspaceJeuException;
 import utils.Dimension;
 import utils.HorsEspaceJeuException;
+import utils.MissileException;
 import utils.Position;
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu {
 
 	    private static final char MARQUE_VIDE = '.';
 		private static final char MARQUE_VAISSEAU = 'V';
 		int longueur;
 	    int hauteur;
 	    Vaisseau vaisseau;
+	    Missile missile;
 	    
 
 	    public SpaceInvaders(int longueur, int hauteur) {
@@ -36,17 +39,26 @@ public class SpaceInvaders {
 		}
 	    
 
-	    private char recupererMarqueDeLaPosition(int x, int y) {
-	        char marque;
-	        if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
-	           marque=MARQUE_VAISSEAU;
-	        else
-	           marque=MARQUE_VIDE;
-	        return marque;
+		private char recupererMarqueDeLaPosition(int x, int y) {
+			char marque;
+			if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
+				marque = Constante.MARQUE_VAISSEAU;
+			else if (this.aUnMissileQuiOccupeLaPosition(x, y))
+					marque = Constante.MARQUE_MISSILE;
+			else marque = Constante.MARQUE_VIDE;
+			return marque;
 		}
 	    
 	    
 	    
+
+		private boolean aUnMissileQuiOccupeLaPosition(int x, int y) {
+			return this.aUnMissile() && vaisseau.occupeLaPosition(x, y);
+		}
+
+		private boolean aUnMissile() {
+			return missile!=null;
+		}
 
 		private boolean aUnVaisseauQuiOccupeLaPosition(int y, int x) {
 			return this.aUnVaisseau() && vaisseau.occupeLaPosition(x, y);
@@ -104,7 +116,15 @@ public class SpaceInvaders {
 			Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
 			positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
 		}
+
+		public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+			
+			   if ((vaisseau.hauteur()+ dimensionMissile.hauteur()) > this.hauteur )
+				   throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
+								
+			   this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesseMissile);
+	       }
+		
 		
 	
-
    }
